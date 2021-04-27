@@ -51,7 +51,7 @@ while True:
                     upbit.buy_market_order("KRW-SXP", krw*0.9995)
         else:
             btc = get_balance("SXP")
-            if sxp > 0.00008:
+            if sxp > 1.08:
                 upbit.sell_market_order("KRW-SXP", sxp*0.9995)
         time.sleep(1)
     except Exception as e:
